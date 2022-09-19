@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
 .header {
@@ -24,16 +24,17 @@
 .header__element_position {
   position: absolute;
 }
-.header_margin-padding_zero{
+.header_margin-padding_zero {
   margin: 0;
   padding: 0;
 }
-
+.logo {
+  width: 228px;
+  height: 32px;
+}
 .logo_place_header {
   top: 30px;
   left: 64px;
-  width: 228px;
-  height: 32px;
   z-index: 2;
 }
 .header__title {
@@ -75,7 +76,7 @@
   justify-content: space-between;
   min-height: 200px;
 }
-.two-columns_margin-padding_zero{
+.two-columns_margin-padding_zero {
   margin: 0;
   padding: 0;
 }
@@ -143,7 +144,7 @@
   margin: 0;
   padding: 0;
 }
-.table_margin-padding_zero{
+.table_margin-padding_zero {
   margin: 0;
   padding: 0;
 }
@@ -169,22 +170,18 @@
   font-weight: normal;
   margin-top: 20px;
 }
-div {
-  border: 3px solid red;}
-  section {
-    border: 3px solid red;}
-.feynman{
+
+.feynman {
   height: 890px;
   background-color: #f2f2f2;
   text-align: center;
   position: relative;
-  margin: 100px auto 0;
 }
-.feynman_margin-padding_zero{
+.feynman_margin-padding_zero {
   margin: 0;
   padding: 0;
 }
-.feynman__title{
+.feynman__title {
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
@@ -193,14 +190,14 @@ div {
   z-index: 1;
   position: relative;
 }
-.feynman__subtitle{
+.feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   z-index: 1;
   position: relative;
 }
-.feynman__link{
+.feynman__link {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -209,7 +206,7 @@ div {
   right: 48px;
   z-index: 1;
 }
-.feynman__image{
+.feynman__image {
   width: 867px;
   height: 637px;
   position: absolute;
@@ -217,7 +214,7 @@ div {
   bottom: 0;
   z-index: 0;
 }
-.kaufman{
+.kaufman {
   display: flex;
   flex-direction: column;
   background-color: #1f1f1f;
@@ -230,15 +227,21 @@ div {
   margin: 90px auto 20px;
   text-align: center;
   color: white;
+  position: relative;
+  z-index: 1;
 }
-.section-subtitle {
+.section-subtitle_theme_dark {
   width: 60%;
   margin: 0 auto;
   text-align: center;
   color: white;
+  position: relative;
+  z-index: 1;
 }
-.table_theme_dark{
+.table_theme_dark {
   margin-bottom: 90px;
+  position: relative;
+  z-index: 1;
 }
 .table__cell_theme_dark {
   width: 200px;
@@ -246,18 +249,82 @@ div {
   margin-right: 0;
   margin-top: 80px;
 }
-.table__heading_theme_dark{
-position: relative;
-z-index: 1;
+
+.kaufman__triangle {
+  position: absolute;
+  right: -210px;
+  top: 0;
+  width: 877px;
+  height: 877px;
 }
-.table__text_theme_dark{
-position: relative;
-z-index: 1;
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f1f1f;
+  box-sizing: border-box;
+  padding: 60px 0 40px;
+  color: white;
 }
-.kaufman__triangle{
-position: absolute;
-right: -210px;
-top:0;
-width: 877px;
-height: 877px;
+.footer_margin-padding_zero {
+  margin: 0;
+  padding: 0;
+}
+.footer__columns {
+  width: 90%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 18px 0;
+}
+.footer__column_content {
+  display: flex;
+  flex-direction: row;
+}
+.column-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px 0 16px;
+}
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer__column_link {
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+}
+.footer__social-icon{
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+div {
+  border: 3px solid red;
+}
+section {
+  border: 3px solid red;
 }
