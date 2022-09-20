@@ -1,12 +1,8 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы Новая проверка*/
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: /*"Helvetica Neue",*/ "Arial", sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
 .header {
@@ -143,7 +139,6 @@
 }
 
 .section-title {
-  margin: 0;
   padding: 0;
   line-height: 1.15;
   font-size: 60px;
@@ -154,7 +149,6 @@
 }
 
 .section-subtitle {
-  margin: 0;
   padding: 0;
   line-height: 34px;
   font-size: 24px;
@@ -203,7 +197,6 @@
 }
 
 .feynman__title {
-  margin: 0;
   padding: 0;
   line-height: 1.15;
   font-size: 120px;
@@ -327,7 +320,6 @@
 }
 
 .footer__author {
-  margin: 0;
   padding: 0;
   line-height: 25px;
   font-size: 18px;
@@ -336,7 +328,6 @@
 }
 
 .footer__column-links {
-  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
