@@ -1,0 +1,8 @@
+.section-title_theme_dark {
+  width: 60%;
+  margin: 90px auto 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
