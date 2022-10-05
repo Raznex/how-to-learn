@@ -1,6 +1,6 @@
- .techniques{
+.video{
   display: flex;
   flex-direction: column;
-  margin: 100px auto;
- }
+  position: relative;
+}
 /*title and subtitle in digits*/
