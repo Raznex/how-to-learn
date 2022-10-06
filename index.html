@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, css">
     <meta name="author" content="Андрей">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/pageimport.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Научиться учиться</title>
   </head>
   <body>
@@ -26,7 +25,7 @@
           src="./images/header-image.png"
           alt="Картинка в шапке"
           class="header__main-illustration">
-        <div class="header__square-pic"></div>
+        <div class="header__square-pic header__rotation"></div>
       </header>
       <main class="content">
         <section class="description">
@@ -302,25 +301,26 @@
               </p>
             </li>
           </ul>
-            <img class="kaufman__triangle" src="./images/kaufman-triangle.svg" alt="Треугольник">
+            <!-- <img class="kaufman__triangle kaufman__rotation" src="./images/kaufman-triangle.svg" alt="Треугольник"> -->
+            <div class="kaufman__triangle kaufman__rotation"></div>
         </section>
         <section class="resources">
           <h2 class="section-title">Полезные ресурсы</h2>
           <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-          <div class="resources__logo-zone">
-<a href="#" class="resources__link">
-<img src="/images_sprint-2/logo/resources-arzamas.svg" alt="Лого Арзамас">
+          <nav class="resources__logo-zone">
+<a href="#">
+<img class="resources__link" src="/images_sprint-2/logo/resources-arzamas.svg" alt="Лого Арзамас">
 </a>
-<a href="#" class="resources__link">
-  <img src="/images_sprint-2/logo/resources-n1.svg" alt="Лого Н">
+<a href="#">
+  <img class="resources__link" src="/images_sprint-2/logo/resources-n1.svg" alt="Лого Н">
   </a>
-  <a href="#" class="resources__link">
-    <img src="/images_sprint-2/logo/resources-strelka.svg" alt="Лого Стрелка">
+  <a href="#">
+    <img class="resources__link" src="/images_sprint-2/logo/resources-strelka.svg" alt="Лого Стрелка">
     </a>
-  <a href="#" class="resources__link">
-    <img src="/images_sprint-2/logo//resources-polka.svg" alt="Лого Полка">
+  <a href="#">
+    <img class="resources__link" src="/images_sprint-2/logo//resources-polka.svg" alt="Лого Полка">
     </a>
-          </div>
+          </nav>
         </section>
       </main>
       <footer class="footer">
