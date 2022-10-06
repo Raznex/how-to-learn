@@ -4,7 +4,6 @@
   background-color: #f2f2f2;
   padding-top: 60px;
   position: relative;
-  top: -50px;
-  z-index: -1;
+  z-index: 1;
 }
 /*two-columns in description*/

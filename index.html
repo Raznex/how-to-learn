@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, css">
     <meta name="author" content="Андрей">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./pages/index.css">
     <title>Научиться учиться</title>
   </head>
   <body>
@@ -27,11 +27,11 @@
           alt="Картинка в шапке"
           class="header__main-illustration"
         >
-        <div class="header__square-pic header__rotation"></div>
+        <div class="header__square-pic rotation"></div>
       </header>
       <main class="content">
-        <section class="description">
-          <div class="two-columns">
+        <div class="description"> <!--Я пытался сделать с помощью <article>, но валидатор ругается, что тогда надо делать див, а не секцию,что немного противоречит брифу -->
+          <article class="two-columns">
             <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">
@@ -54,8 +54,8 @@
                 техники применяются на примере обучения в Практикуме.
               </p>
             </div>
-          </div>
-        </section>
+          </article>
+        </div>
         <!--Новая секция началась тут -->
         <section class="techniques">
           <h2 class="section-title">Техники обучения</h2>
@@ -64,9 +64,9 @@
             <li class="cards__item">
               <img
                 src="./images_sprint-2/cards-attention.png"
-                alt=""
+                alt="Внимание"
                 class="cards__image"
-                >
+              >
               <h3 class="cards__title">Два вида внимания</h3>
               <p class="cards__description">
                 Глубокие знания возникают, если чередовать сфокусированное и
@@ -76,7 +76,7 @@
             <li class="cards__item">
               <img
                 src="./images_sprint-2/cards-recall.png"
-                alt=""
+                alt="Вспоминать"
                 class="cards__image"
               >
               <h3 class="cards__title">Recall</h3>
@@ -88,7 +88,7 @@
             <li class="cards__item">
               <img
                 src="./images_sprint-2/cards-interliving.png"
-                alt=""
+                alt="Интерливинг"
                 class="cards__image"
               >
               <h3 class="cards__title">Интерливинг</h3>
@@ -100,7 +100,7 @@
             <li class="cards__item">
               <img
                 src="./images_sprint-2/cards-question.png"
-                alt=""
+                alt="Вопросы"
                 class="cards__image"
               >
               <h3 class="cards__title">Вопросы</h3>
@@ -112,7 +112,7 @@
             <li class="cards__item">
               <img
                 src="./images_sprint-2/cards-competence.png"
-                alt=""
+                alt="Иллюзия"
                 class="cards__image"
               >
               <h3 class="cards__title">Иллюзия компетентности</h3>
@@ -126,24 +126,24 @@
         <section class="video">
           <h2 class="section-title">Видео на TED</h2>
           <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-          <div class="video__frames">
-            <iframe
-              class="video__iframe"
-              id="ytplayer1"
-              width="515"
-              height="316"
-              src="https://www.youtube.com/embed/5MgBikgcWnY?controls=0&color=white"
-            >
-            </iframe>
-            <iframe
-              class="video__iframe"
-              id="ytplayer2"
-              width="515"
-              height="316"
-              src="https://www.youtube.com/embed/arj7oStGLkU?controls=0&color=white"
-            >
-            </iframe>
-          </div>
+          <ul class="video__frames">
+            <li>
+              <iframe
+                class="video__iframe"
+                id="ytplayer1"
+                src="https://www.youtube.com/embed/5MgBikgcWnY?controls=0&color=white"
+              >
+              </iframe>
+            </li>
+            <li>
+              <iframe
+                class="video__iframe"
+                id="ytplayer2"
+                src="https://www.youtube.com/embed/arj7oStGLkU?controls=0&color=white"
+              >
+              </iframe>
+            </li>
+          </ul>
         </section>
         <section class="oakley">
           <div class="two-columns">
@@ -312,44 +312,51 @@
               </p>
             </li>
           </ul>
-          <!-- <img class="kaufman__triangle kaufman__rotation" src="./images/kaufman-triangle.svg" alt="Треугольник"> -->
-          <div class="kaufman__triangle kaufman__rotation"></div>
+          <div class="kaufman__triangle rotation"></div>
         </section>
         <section class="resources">
           <h2 class="section-title">Полезные ресурсы</h2>
           <p class="section-subtitle">
             Больше материалов о техниках и лайфхаках обучения
           </p>
-          <nav class="resources__logo-zone">
-            <a href="#">
-              <img
-                class="resources__link"
-                src="/images_sprint-2/logo/resources-arzamas.svg"
-                alt="Лого Арзамас"
-              >
-            </a>
-            <a href="#">
-              <img
-                class="resources__link"
-                src="/images_sprint-2/logo/resources-n1.svg"
-                alt="Лого Н"
-              >
-            </a>
-            <a href="#">
-              <img
-                class="resources__link"
-                src="/images_sprint-2/logo/resources-strelka.svg"
-                alt="Лого Стрелка"
-              >
-            </a>
-            <a href="#">
-              <img
-                class="resources__link"
-                src="/images_sprint-2/logo//resources-polka.svg"
-                alt="Лого Полка"
-              >
-            </a>
-          </nav>
+          <ul class="resources__logo-zone">
+            <li>
+              <a class="resources__link" href="#">
+                <img
+                  class="resources__logo"
+                  src="./images_sprint-2/logo/resources-arzamas.svg"
+                  alt="Лого Арзамас"
+                >
+              </a>
+            </li>
+            <li>
+              <a class="resources__link" href="#">
+                <img
+                  class="resources__logo"
+                  src="./images_sprint-2/logo/resources-n1.svg"
+                  alt="Лого Н"
+                >
+              </a>
+            </li>
+            <li>
+              <a class="resources__link" href="#">
+                <img
+                  class="resources__logo"
+                  src="./images_sprint-2/logo/resources-strelka.svg"
+                  alt="Лого Стрелка"
+                >
+              </a>
+            </li>
+            <li>
+              <a class="resources__link" href="#">
+                <img
+                  class="resources__logo"
+                  src="./images_sprint-2/logo//resources-polka.svg"
+                  alt="Лого Полка"
+                >
+              </a>
+            </li>
+          </ul>
         </section>
       </main>
       <footer class="footer">

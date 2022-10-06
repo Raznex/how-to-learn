@@ -1,6 +1,6 @@
  .techniques{
   display: flex;
   flex-direction: column;
-  margin: 100px auto;
+  margin: 100px auto 50px;
  }
 /*title and subtitle in digits*/
